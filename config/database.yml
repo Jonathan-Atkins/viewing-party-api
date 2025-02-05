@@ -79,6 +79,4 @@ test:
 #
 production:
   <<: *default
-  database: viewing_party_api_production
-  username: viewing_party_api
-  password: <%= ENV["VIEWING_PARTY_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
