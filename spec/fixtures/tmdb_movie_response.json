@@ -1,0 +1,399 @@
+{
+  "page": 1,
+  "results": [
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [],
+          "id": 1356991,
+          "original_language": "xx",
+          "original_title": "Lord",
+          "overview": "Moving and changing worlds. They start with eight images and merge, gradually diminishing. In the end, they intertwine and become one.",
+          "popularity": 0.328,
+          "poster_path": "/nTUYqnPrTr1CccWjGMVTLdduYm.jpg",
+          "release_date": "2024-10-26",
+          "title": "Lord",
+          "video": false,
+          "vote_average": 0.0,
+          "vote_count": 0
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/ie8OSgIHEl6yQiGJ90dsyBWOpQA.jpg",
+          "genre_ids": [
+              16,
+              14,
+              12,
+              10751,
+              28
+          ],
+          "id": 839033,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The War of the Rohirrim",
+          "overview": "A sudden attack by Wulf, a clever and traitorous lord of Rohan seeking vengeance for the death of his father, forces Helm Hammerhand, the King of Rohan, and his people to make a daring last stand in the ancient stronghold of the Hornburg.",
+          "popularity": 597.233,
+          "poster_path": "/cXzCOx1hUuU9CfmiEv6rXjb6EqU.jpg",
+          "release_date": "2024-12-05",
+          "title": "The Lord of the Rings: The War of the Rohirrim",
+          "video": false,
+          "vote_average": 6.652,
+          "vote_count": 398
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/jMbSOKHbzIK1nCZsvVamgTbVsCY.jpg",
+          "genre_ids": [
+              18
+          ],
+          "id": 512450,
+          "original_language": "ro",
+          "original_title": "Lord",
+          "overview": "Although he hates dogs, Toni is engaged in finding lost animals and then sentimentally blackmails the masters in order to obtain beautiful large amounts of money. Because of an old and ugly Pekinese that Toni cannot succeed of getting rid of, feelings of affection awake in him that surprise even Toni.",
+          "popularity": 1.943,
+          "poster_path": "/1T9hYEf3bN0ldVVgJYetb2sWJcU.jpg",
+          "release_date": "2011-09-23",
+          "title": "Lord",
+          "video": false,
+          "vote_average": 7.3,
+          "vote_count": 38
+      },
+      {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [
+              16,
+              27
+          ],
+          "id": 1210885,
+          "original_language": "en",
+          "original_title": "Lord",
+          "overview": "In a post-apocalyptic world the brutal lord of a renegade group travels through a desert inhabited by mutant nomad tribes and monstrous beasts. Lord's driver is looked down on by the rest of the group, but he might be more skilled than he leads on.",
+          "popularity": 1.062,
+          "poster_path": "/4T7QFBSeV4pFRx6TYtxNHmlu4aD.jpg",
+          "release_date": "2023-05-06",
+          "title": "Lord",
+          "video": false,
+          "vote_average": 5.5,
+          "vote_count": 12
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/5JrZAtyk3LwiiAWLW0kwz41XZJC.jpg",
+          "genre_ids": [
+              12,
+              14,
+              28
+          ],
+          "id": 122,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The Return of the King",
+          "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+          "popularity": 156.292,
+          "poster_path": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+          "release_date": "2003-12-17",
+          "title": "The Lord of the Rings: The Return of the King",
+          "video": false,
+          "vote_average": 8.483,
+          "vote_count": 24592
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/z51Wzj94hvAIsWfknifKTqKJRwp.jpg",
+          "genre_ids": [
+              12,
+              14,
+              28
+          ],
+          "id": 120,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+          "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+          "popularity": 154.384,
+          "poster_path": "/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+          "release_date": "2001-12-18",
+          "title": "The Lord of the Rings: The Fellowship of the Ring",
+          "video": false,
+          "vote_average": 8.418,
+          "vote_count": 25548
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/cyQK5IzMXDUS8o84HYbSIFQt1Vy.jpg",
+          "genre_ids": [
+              28,
+              16,
+              878
+          ],
+          "id": 39102,
+          "original_language": "ja",
+          "original_title": "ドラゴンボールゼット 超スーパーサイヤ人じんだ孫そん悟ご空くう",
+          "overview": "A Super Namekian named Slug comes to invade Earth. But the Z Warriors do their best to stop Slug and his gang.",
+          "popularity": 28.495,
+          "poster_path": "/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
+          "release_date": "1991-03-19",
+          "title": "Dragon Ball Z: Lord Slug",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 528
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/6G73mNyooWAEQTpckPSnFxFoNmc.jpg",
+          "genre_ids": [
+              12,
+              14,
+              28
+          ],
+          "id": 121,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings: The Two Towers",
+          "overview": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor. Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+          "popularity": 104.866,
+          "poster_path": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+          "release_date": "2002-12-18",
+          "title": "The Lord of the Rings: The Two Towers",
+          "video": false,
+          "vote_average": 8.4,
+          "vote_count": 22175
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/A0IRBPPpwxRsdmglpPQ0yo0FgLQ.jpg",
+          "genre_ids": [
+              28,
+              35
+          ],
+          "id": 16407,
+          "original_language": "cn",
+          "original_title": "龍少爺",
+          "overview": "Dragon and his madcap pal Cowboy spend their days getting into mischief, frustrating the elders, chasing girls, and competing in the village sport. When Dragon overhears a fiendish plot by smugglers to sell China's national treasures overseas, the pair leap into action. Also, Cowboy's wealthy father is kidnapped by the villainous and lethal Big Boss, and the scene is set for a furious martial arts showdown.",
+          "popularity": 21.437,
+          "poster_path": "/qjQhm2jwV4DSTauOydFJVhVyMS3.jpg",
+          "release_date": "1982-01-21",
+          "title": "Dragon Lord",
+          "video": false,
+          "vote_average": 6.356,
+          "vote_count": 132
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/lKilKeX1rlIhRcY4xQPP4bmuct9.jpg",
+          "genre_ids": [
+              16,
+              14,
+              18,
+              878
+          ],
+          "id": 369552,
+          "original_language": "zh",
+          "original_title": "爵迹",
+          "overview": "Based on the novel of the same name, the film depicts the endless battles of four kingdoms as they fight for power and domination of the one ultimate realm.Based on his 2 beloved fantasy novels with 6 million copies sold, L.O.R.D is acclaimed writer and director Guo Jingming’s follow up to his Tiny Times films.  The action-adventure odyssey is set in a world of warring Sorcerers, Lords and Beasts. The first CGI Film to come from China",
+          "popularity": 17.298,
+          "poster_path": "/qIUDi1XDAREkarkwNzOOBgUzqyC.jpg",
+          "release_date": "2016-09-29",
+          "title": "L.O.R.D: Legend of Ravaging Dynasties",
+          "video": false,
+          "vote_average": 7.0,
+          "vote_count": 133
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/6zJ0cIUPUxLp8sHz9TJbEPJXYGw.jpg",
+          "genre_ids": [
+              18,
+              53
+          ],
+          "id": 67530,
+          "original_language": "en",
+          "original_title": "The Lords of Discipline",
+          "overview": "Will arrives for his last year at Military Academy, in the Deep South USA, in the 1960's. A black student, Pearce, has been accepted, for the first time and Will is asked to keep an eye out for the inevitable racism. The racists come in the form of The Ten, a secret group of the elite students. They want Pearce to leave on his own free will, but are prepared to torture him to make it 'his free will'. Will is forced to help Pearce and he is prepared to risk his own career to do so.",
+          "popularity": 4.927,
+          "poster_path": "/27iADagjEjBvO3Lg10QGmzVSpLf.jpg",
+          "release_date": "1983-02-18",
+          "title": "The Lords of Discipline",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 43
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/3lIa9UKjsyLtQmkT7ODrEKLoEwy.jpg",
+          "genre_ids": [
+              99,
+              80
+          ],
+          "id": 888917,
+          "original_language": "fr",
+          "original_title": "Les Rois de l'arnaque",
+          "overview": "This documentary traces the rise and crash of scammers who conned the EU carbon quota system and pocketed millions before turning on one another.",
+          "popularity": 4.607,
+          "poster_path": "/tPcrO8DJAP0lPeoTiQHRsNBD2EC.jpg",
+          "release_date": "2021-11-03",
+          "title": "Lords of Scam",
+          "video": false,
+          "vote_average": 6.7,
+          "vote_count": 56
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/iJ0iDvSg4N17KIa1oQbtb3sW4Om.jpg",
+          "genre_ids": [
+              16,
+              28,
+              14,
+              35
+          ],
+          "id": 570269,
+          "original_language": "ja",
+          "original_title": "劇場版 トリニティセブン -天空図書館と真紅の魔王-",
+          "overview": "The series focuses on the adventures of Arata Kasuga, a high school student, who is targeted by Lilith, a teacher at a mystical school. Given three choices in an effort to help save the breakdown phenomenon of the world by evil forces and while attempting to solve the mystery of his beloved cousin and childhood friend, Hijiri, who disappeared to a difference space.",
+          "popularity": 8.96,
+          "poster_path": "/vh4f6N3VdgzmYnRK3VctwBZWdv9.jpg",
+          "release_date": "2019-03-29",
+          "title": "Trinity Seven: Heaven's Library & Crimson Lord",
+          "video": false,
+          "vote_average": 7.8,
+          "vote_count": 54
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/bey6QCYFsC7IA1g0HGdI4ZqYNkl.jpg",
+          "genre_ids": [
+              18,
+              27,
+              53
+          ],
+          "id": 920429,
+          "original_language": "en",
+          "original_title": "The Great and Terrible Day of the Lord",
+          "overview": "On Michael and Gabby's first romantic get-away things takes a terrifying turn when God delivers unsettling news to Gabby after taking over Michael's body. Is Michael a manipulative psychopath or could this really be a direct experience with her creator offering a path to eternal happiness?",
+          "popularity": 1.966,
+          "poster_path": "/6EyEGGhkaDZLCjxRIRoeUm248G8.jpg",
+          "release_date": "2021-12-28",
+          "title": "The Great and Terrible Day of the Lord",
+          "video": false,
+          "vote_average": 6.7,
+          "vote_count": 37
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/pFKUaIkbqu03ScfVi9FSvcs7HQo.jpg",
+          "genre_ids": [
+              18,
+              28,
+              53
+          ],
+          "id": 512731,
+          "original_language": "cn",
+          "original_title": "掃毒2 天地對決",
+          "overview": "A financial tycoon, once a triad member, tries to eradicate the drug market while an old accomplice aims to be Hong Kong's first drug lord.",
+          "popularity": 6.895,
+          "poster_path": "/ja9oIIP33Pgm9295Gn67zBz8Vjy.jpg",
+          "release_date": "2019-07-04",
+          "title": "The White Storm 2: Drug Lords",
+          "video": false,
+          "vote_average": 6.4,
+          "vote_count": 52
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/bpB2vDJKl1RT1jN5jx2o8oPNDeo.jpg",
+          "genre_ids": [
+              18,
+              35
+          ],
+          "id": 1091170,
+          "original_language": "ja",
+          "original_title": "橋蔵の若様やくざ",
+          "overview": "Young Lord Taihei goes to Edo to find the lost family treasure, a plover incense burner, under the disguise of a ronin.",
+          "popularity": 0.47,
+          "poster_path": "/70ejnCpgVXFzTgEnEBzCehsI7eb.jpg",
+          "release_date": "1961-06-11",
+          "title": "Young Lord Yakuza",
+          "video": false,
+          "vote_average": 6.0,
+          "vote_count": 1
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/kSK4wChyhlx6cAbs5mruR5noWBp.jpg",
+          "genre_ids": [
+              35
+          ],
+          "id": 487753,
+          "original_language": "fr",
+          "original_title": "Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes ?",
+          "overview": "Gaby is happy. After eighteen years of work, he is a flourishing mechanist. But one day, the mechanic of his life is out of order. He discovers that his assistant is in love with his wife. This one runs away with her daughter in law. So, Gaby's friends imagine a gambit to find them, at the moment where father and son enjoy pleasures of single life.",
+          "popularity": 1.412,
+          "poster_path": "/kOwKMrReaMm676sZnxV9YtaSmWw.jpg",
+          "release_date": "1980-08-06",
+          "title": "What Did I Ever Do to the Good Lord to Deserve a Wife Who Drinks in Cafes with Men?",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 2
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/TXSxV23MWYkezZ3219gtgcSX6n.jpg",
+          "genre_ids": [
+              12,
+              16,
+              14
+          ],
+          "id": 123,
+          "original_language": "en",
+          "original_title": "The Lord of the Rings",
+          "overview": "The Fellowship of the Ring embark on a journey to destroy the One Ring and end Sauron's reign over Middle-earth.",
+          "popularity": 25.484,
+          "poster_path": "/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg",
+          "release_date": "1978-11-15",
+          "title": "The Lord of the Rings",
+          "video": false,
+          "vote_average": 6.6,
+          "vote_count": 927
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/d3C6ZzIaq1I8q2LpL1TnUQaMlVb.jpg",
+          "genre_ids": [
+              80,
+              18,
+              53
+          ],
+          "id": 1830,
+          "original_language": "en",
+          "original_title": "Lord of War",
+          "overview": "Yuri Orlov is a globetrotting arms dealer and, through some of the deadliest war zones, he struggles to stay one step ahead of a relentless Interpol agent, his business rivals and even some of his customers who include many of the world's most notorious dictators. Finally, he must also face his own conscience.",
+          "popularity": 27.122,
+          "poster_path": "/3MGQD4yXokufNlW1AyRXdiy7ytP.jpg",
+          "release_date": "2005-09-16",
+          "title": "Lord of War",
+          "video": false,
+          "vote_average": 7.327,
+          "vote_count": 4839
+      },
+      {
+          "adult": false,
+          "backdrop_path": "/iITCYIZHzCNd6mrCBF9nRMtHqgM.jpg",
+          "genre_ids": [
+              28,
+              12,
+              10752,
+              16
+          ],
+          "id": 630044,
+          "original_language": "zh",
+          "original_title": "冷血狂宴",
+          "overview": "An upcoming Chinese computer animated motion capture action fantasy adventure film written and directed by Guo Jing Ming, the sequel to the first L.O.R.D: Legend of Ravaging Dynasties film.",
+          "popularity": 4.055,
+          "poster_path": "/43MlbzxB5OohgvPHmPIvRi4MCVn.jpg",
+          "release_date": "2020-12-02",
+          "title": "L.O.R.D: Legend of Ravaging Dynasties 2",
+          "video": false,
+          "vote_average": 5.2,
+          "vote_count": 18
+      }
+  ],
+  "total_pages": 36,
+  "total_results": 720
+}
