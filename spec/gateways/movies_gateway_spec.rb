@@ -7,10 +7,7 @@ RSpec.describe MovieGateway do
 
     movies = json_response.map do |movie|
       expect(movie.title).to be_an(String)
-require 'pry'; binding.pry
-    # expect(movie.title).to be_an(String)
-    # expect(movie[0].title).to be_an(String)
-    # expect(movie[0].
+      expect(movie.vote_average).to be_an(Float)
     end
   end
 end
