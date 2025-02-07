@@ -10,7 +10,6 @@ RSpec.describe "Users API", type: :request do
         password_confirmation: "QWERTY123"
       }
     end
-
     context "request is valid" do
       it "returns 201 Created and provides expected fields" do
         post api_v1_users_path, params: user_params, as: :json
@@ -26,7 +25,7 @@ RSpec.describe "Users API", type: :request do
         expect(json[:data][:attributes]).to_not have_key(:password_confirmation)
       end
     end
-
+    
     context "request is invalid" do
       it "returns an error for non-unique username" do
         User.create!(name: "me", username: "its_me", password: "abc123")

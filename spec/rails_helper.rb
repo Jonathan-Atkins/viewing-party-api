@@ -6,7 +6,11 @@ require_relative '../config/environment'
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 require 'simplecov'
+
 SimpleCov.start
+require 'webmock/rspec'
+require 'vcr'
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -73,7 +77,8 @@ Shoulda::Matchers.configure do |config|
 end
 
 VCR.configure do |config|
-  config.allow_http_connections_when_no_cassette = true
-  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :webmock
+  config.filter_sensitive_data('<TMDB_API_KEY>') { ENV['tmdb_api_key'] }
+  config.configure_rspec_metadata!
 end
