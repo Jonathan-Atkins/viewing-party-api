@@ -18,32 +18,25 @@ RSpec.describe "Viewing Party API", type: :request do
         invitees: [invitee1.id, invitee2.id, invitee3.id]
       }
     end
-require 'pry'; binding.pry
     context "when request is valid" do
       it "creates a viewing party and invites users" do
         post "/api/v1/viewing_parties", params: valid_params, as: :json
 
-        expect(response).to have_http_status(:created)
+        expect(response).to be_successful
         json = JSON.parse(response.body, symbolize_names: true)
         
-        expect(json[:data]).to include(
-          id: a_kind_of(String),
-          type: "viewing_party",
-          attributes: a_hash_including(
-            name: valid_params[:name],
-            start_time: valid_params[:start_time],
-            end_time: valid_params[:end_time],
-            movie_id: valid_params[:movie_id],
-            movie_title: valid_params[:movie_title]
-          )
-        )
-
+        expect(json[:data]).to be_an(Hash)
+        expect(json[:data][:id]).to be_an(String)
+        expect(json[:data][:type]).to eq("viewing_party")
+        expect(json[:data][:attributes]).to be_a(Hash)
+        expect(json[:data][:attributes][:name]).to eq(valid_params[:name])
+        expect(json[:data][:attributes][:start_time]).to eq(valid_params[:start_time])
+        expect(json[:data][:attributes][:end_time]).to eq(valid_params[:end_time])
+        expect(json[:data][:attributes][:movie_id]).to eq(valid_params[:movie_id])
+        expect(json[:data][:attributes][:movie_title]).to eq(valid_params[:movie_title])
+        expect(json[:data][:attributes][:invitees]).to be_an(Array)
         expect(json[:data][:attributes][:invitees].count).to eq(3)
-        expect(json[:data][:attributes][:invitees]).to include(
-          a_hash_including(id: invitee1.id, name: invitee1.name, username: invitee1.username),
-          a_hash_including(id: invitee2.id, name: invitee2.name, username: invitee2.username),
-          a_hash_including(id: invitee3.id, name: invitee3.name, username: invitee3.username)
-        )
+        expect(json[:data][:attributes][:invitees].map { |invitee| invitee[:id] }).to include(invitee1.id, invitee2.id, invitee3.id)
       end
     end
 

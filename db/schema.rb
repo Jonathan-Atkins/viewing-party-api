@@ -10,9 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_23_211921) do
+ActiveRecord::Schema[7.1].define(version: 2025_02_07_063211) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "dummies", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -24,4 +29,27 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_23_211921) do
     t.index ["api_key"], name: "index_users_on_api_key", unique: true
   end
 
+  create_table "viewing_parties", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "start_time", null: false
+    t.datetime "end_time", null: false
+    t.integer "movie_id", null: false
+    t.string "movie_title", null: false
+    t.boolean "host", default: false, null: false
+    t.integer "invitees", default: [], array: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "viewing_party_invitees", force: :cascade do |t|
+    t.bigint "viewing_party_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_viewing_party_invitees_on_user_id"
+    t.index ["viewing_party_id"], name: "index_viewing_party_invitees_on_viewing_party_id"
+  end
+
+  add_foreign_key "viewing_party_invitees", "users"
+  add_foreign_key "viewing_party_invitees", "viewing_parties"
 end
