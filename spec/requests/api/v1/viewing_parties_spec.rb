@@ -13,6 +13,7 @@ RSpec.describe "Viewing Party API", type: :request do
         start_time: "2025-02-01T10:00:00.000Z",
         end_time: "2025-02-01T14:30:00.000Z",
         movie_id: 278,
+        host: false,
         movie_title: "The Shawshank Redemption",
         invitees: [invitee1.id, invitee2.id, invitee3.id]
       }
