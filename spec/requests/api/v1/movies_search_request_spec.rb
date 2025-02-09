@@ -15,7 +15,6 @@ describe "Movies Search", type: :request do
 
   get "/api/v1/movies", params: { query: "Lord" }
 
-        
     expect(response).to be_successful
     expect(response.status).to eq 200
 
