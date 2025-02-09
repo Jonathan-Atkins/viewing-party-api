@@ -18,7 +18,7 @@ describe "Movies Search", type: :request do
         
     expect(response).to be_successful
     expect(response.status).to eq 200
-
+require 'pry'; binding.pry
     movies = JSON.parse(response.body, symbolize_names: true)[:data]
     expect(movies).to be_an(Array)
 
