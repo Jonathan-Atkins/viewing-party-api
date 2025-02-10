@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "Movies Search", type: :request do
-  it "returns movies matching the query" do
+  it "returns movies matching the query", :vcr do
     json_response = File.read("spec/fixtures/tmdb_movie_response.json")
     stub_request(:get, "https://api.themoviedb.org//3/search/movie?query=Lord").
       with(
@@ -14,7 +14,6 @@ describe "Movies Search", type: :request do
         to_return(status: 200, body: json_response, headers: {})
 
   get "/api/v1/movies", params: { query: "Lord" }
-
     expect(response).to be_successful
     expect(response.status).to eq 200
 

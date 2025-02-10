@@ -14,9 +14,22 @@ class Api::V1::ViewingPartiesController < ApplicationController
     end
   end
 
-  private
-
-  def viewing_party_params
-    params.permit(:name, :start_time, :end_time, :host, :movie_id, :movie_title, invitees: [])
+  def update
+    updating_party = ViewingParty.find_by(id: params[:id])
+    
+    if updating_party.nil?
+      render json: { error: "Viewing Party not found" }, status: :not_found and return
+    end
+  
+    new_invitee = User.find_by(id: params[:invitee_id])
+  
+    if new_invitee.nil?
+      render json: { error: "User ID #{params[:invitee_id]} does not exist" }, status: :not_found and return
+    elsif updating_party.invitees.include?(new_invitee.id)
+      render json: { error: "User ID #{params[:invitee_id]} has already been invited to the party" }, status: :unprocessable_entity and return
+    end
+  
+    updating_party.viewing_party_invitees.create(user_id: new_invitee.id)
+    render json: ViewingPartySerializer.new(updating_party), status: :ok
   end
 end
