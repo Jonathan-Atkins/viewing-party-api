@@ -1,4 +1,5 @@
 class Api::V1::ViewingPartiesController < ApplicationController
+  rescue_from ActiveRecord::RecordNotFound, with: :not_found
 
   def create  
     new_party = ViewingParty.new(viewing_party_params)
@@ -15,10 +16,10 @@ class Api::V1::ViewingPartiesController < ApplicationController
   end
 
   def update
-    updating_party = ViewingParty.find_by(id: params[:id])
-  
-    if updating_party.nil?
-      render json: { error: "Viewing Party not found" }, status: :not_found and return
+    begin
+      updating_party = ViewingParty.find(params[:id])
+    rescue ActiveRecord::RecordNotFound => e
+      render json: { error: e.message }, status: :not_found and return
     end
   
     new_invitee = User.find_by(id: params[:invitee_id])
@@ -36,5 +37,11 @@ class Api::V1::ViewingPartiesController < ApplicationController
     end
   
     render json: ViewingPartySerializer.new(updating_party), status: :ok
+  end
+
+  private
+
+  def not_found
+    render json: { error: "Viewing Party not found" }, status: :not_found
   end
 end
