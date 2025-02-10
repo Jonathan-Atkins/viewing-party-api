@@ -16,7 +16,7 @@ class Api::V1::ViewingPartiesController < ApplicationController
 
   def update
     updating_party = ViewingParty.find_by(id: params[:id])
-    
+  
     if updating_party.nil?
       render json: { error: "Viewing Party not found" }, status: :not_found and return
     end
@@ -29,7 +29,12 @@ class Api::V1::ViewingPartiesController < ApplicationController
       render json: { error: "User ID #{params[:invitee_id]} has already been invited to the party" }, status: :unprocessable_entity and return
     end
   
-    updating_party.viewing_party_invitees.create(user_id: new_invitee.id)
+    new_invitee_record = updating_party.viewing_party_invitees.create(user_id: new_invitee.id)
+  
+    if new_invitee_record.id.nil?
+      render json: { error: "Failed to add invitee" }, status: :unprocessable_entity and return
+    end
+  
     render json: ViewingPartySerializer.new(updating_party), status: :ok
   end
 end
