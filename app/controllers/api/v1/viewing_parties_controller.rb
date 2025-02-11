@@ -6,9 +6,10 @@ class Api::V1::ViewingPartiesController < ApplicationController
     new_party.toggle(:host)
 
     if new_party.save
-       params[:invitees].each do |invitee_id|
+      # Create viewing_party_invitees for each invitee
+      params[:viewing_party][:invitees].each do |invitee_id|
         new_party.viewing_party_invitees.create(user_id: invitee_id)
-       end
+      end
       render json: ViewingPartySerializer.new(new_party), status: :created
     else
       render json: { errors: new_party.errors.full_messages }, status: 422
@@ -40,6 +41,10 @@ class Api::V1::ViewingPartiesController < ApplicationController
   end
 
   private
+
+  def viewing_party_params
+    params.require(:viewing_party).permit(:name, :start_time, :end_time, :movie_id, :movie_title, invitees: [])
+  end
 
   def not_found
     render json: { error: "Viewing Party not found" }, status: :not_found

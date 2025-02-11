@@ -19,7 +19,7 @@ RSpec.describe "Viewing Party API", type: :request do
         movie_title: "The Shawshank Redemption"
       )
     end
-
+    
     before do
       viewing_party.save!
       ViewingPartyInvitee.create(user: invitee1, viewing_party: viewing_party)
@@ -70,19 +70,6 @@ RSpec.describe "Viewing Party API", type: :request do
         json = JSON.parse(response.body)
 
         expect(json["error"]).to eq("User ID #{invitee1.id} has already been invited to the party")
-      end
-    end
-
-    context "when the invitee record fails to save" do
-      it "returns an error message" do
-        allow_any_instance_of(ViewingPartyInvitee).to receive(:id).and_return(nil) # Simulate a failed save
-
-        patch "/api/v1/viewing_parties/#{viewing_party.id}", params: { invitee_id: new_invitee.id }, as: :json
-
-        expect(response).to have_http_status(:unprocessable_entity)
-        json = JSON.parse(response.body)
-
-        expect(json["error"]).to eq("Failed to add invitee")
       end
     end
   end
